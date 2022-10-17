@@ -1,10 +1,13 @@
+import {MoviesList} from "./Components/MoviesList/MoviesList";
 
 
 function App() {
   return (
 
 
-      <div></div>
+      <div>
+        <MoviesList/>
+      </div>
 
 
   );

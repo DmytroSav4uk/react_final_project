@@ -1,11 +1,10 @@
-import {axiosInstance} from "./axios.service";
-import {urls} from "../Config/urls/baseURL";
+import {axiosGetPosters, axiosInstance} from "./axios.service";
+import {urls} from "../Config/urls/urls";
+import axios from "axios";
 
 const movieService ={
-
-  getAll:()=> axiosInstance(urls.movies)
-
-
+  getPage:(page)=> axiosInstance(urls.movies+page),
+  getPoster:(backdrop_path)=> axiosGetPosters(urls + backdrop_path)
 }
 
 export {movieService}

@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cd9c24e2-55db-4fe0-8068-2f1430b6079c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/react_final_project.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Config/urls/baseURL.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/axios.service.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/movie.service.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/slices/Movie.slice.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+    <list default="true" id="cd9c24e2-55db-4fe0-8068-2f1430b6079c" name="Changes" comment="made services">
+      <change afterPath="$PROJECT_DIR$/src/Components/MoviesList/MoviesList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/MoviesListCard/MoviesListCard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Config/urls/urls.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Config/urls/baseURL.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/axios.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/axios.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/movie.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/movie.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/slices/Movie.slice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/slices/Movie.slice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,8 +59,18 @@
       <option name="presentableId" value="Default" />
       <updated>1665948810986</updated>
       <workItem from="1665948812139" duration="1609000" />
-      <workItem from="1665998896921" duration="305000" />
+      <workItem from="1665998896921" duration="430000" />
+      <workItem from="1666002533420" duration="3942000" />
+      <workItem from="1666009470302" duration="11505000" />
     </task>
+    <task id="LOCAL-00001" summary="made services">
+      <created>1665999309696</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1665999309696</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -73,5 +86,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="made services" />
+    <option name="LAST_COMMIT_MESSAGE" value="made services" />
   </component>
 </project>
