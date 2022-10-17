@@ -4,7 +4,8 @@ import axios from "axios";
 
 const movieService ={
   getPage:(page)=> axiosInstance(urls.movies+page),
-  getPoster:(backdrop_path)=> axiosGetPosters(urls + backdrop_path)
+
+  getPoster:(backdrop_path)=> axiosGetPosters + backdrop_path
 }
 
 export {movieService}
