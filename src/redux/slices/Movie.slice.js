@@ -24,19 +24,32 @@ const getPage = createAsyncThunk('movieSlice/getPage',
 
 
 
-const getPoster = createAsyncThunk('movieSlice/getImage',
+// const getPoster = createAsyncThunk('movieSlice/getImage',
+//
+//     async (currentPoster, {rejectWithValue}) => {
+//
+//         try {
+//             const {data} = await movieService.getPoster(currentPoster)
+//             return data;
+//
+//         } catch (e) {
+//             e.rejectWithValue(e.response.data)
+//         }
+//     })
 
-    async (currentPoster, {rejectWithValue}) => {
 
-        try {
-            const {data} = await movieService.getPoster(currentPoster)
-            return data;
+const searchMovie = createAsyncThunk('movieSlice/searchMovie',
 
-        } catch (e) {
-            e.rejectWithValue(e.response.data)
-        }
-    })
+    async (inputData, {rejectWithValue}) => {
 
+    try {
+        const {data} = await movieService.getPage(inputData)
+        return data;
+
+    } catch (e) {
+        e.rejectWithValue(e.response.data)
+    }
+});
 
 
 
@@ -64,10 +77,10 @@ const movieSlice = createSlice({
             .addCase(getPage.pending, (state, action) => {
                 state.loading = true;
             })
-            .addCase(getPoster.fulfilled, (state, action) => {
-                state.movies = action.payload
-                state.loading = false
-            })
+            // .addCase(getPoster.fulfilled, (state, action) => {
+            //     state.movies = action.payload
+            //     state.loading = false
+            // })
 
 
 });
@@ -76,7 +89,7 @@ const {reducer: movieReducer, actions: {}} = movieSlice;
 
 const movieActions = {
     getPage,
-    getPoster
+  //  getPoster
 }
 
 

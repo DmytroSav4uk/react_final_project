@@ -2,9 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd9c24e2-55db-4fe0-8068-2f1430b6079c" name="Changes" comment="day 1 completed">
+      <change afterPath="$PROJECT_DIR$/src/Components/FoundMoviePage/FoundMovies.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Header/Header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Header/Search form/SearchForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/MoviesList/MoviesList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MoviesList/MoviesList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/MoviesListCard/MoviesListCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MoviesListCard/MoviesListCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Config/urls/urls.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Config/urls/urls.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Services/movie.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/movie.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/slices/Movie.slice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/slices/Movie.slice.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +63,8 @@
       <workItem from="1665998896921" duration="430000" />
       <workItem from="1666002533420" duration="3942000" />
       <workItem from="1666009470302" duration="11535000" />
-      <workItem from="1666026094597" duration="1281000" />
+      <workItem from="1666026094597" duration="1481000" />
+      <workItem from="1666088734012" duration="4814000" />
     </task>
     <task id="LOCAL-00001" summary="made services">
       <created>1665999309696</created>
@@ -70,7 +80,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666022064411</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="day 1 completed">
+      <created>1666027791728</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1666027791728</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
