@@ -1,12 +1,15 @@
-import {axiosGetPosters, axiosInstance} from "./axios.service";
+import {axiosInstance} from "./axios.service";
 import {urls} from "../Config/urls/urls";
-import axios from "axios";
+
+
+
 
 
 
 const movieService ={
   getPage:(page)=> axiosInstance(urls.movies+page),
-  searchMovie:()=>axiosInstance(urls.searchMovies)
+  searchMovie:(query)=> axiosInstance(urls.searchMovies + query)
+
 }
 
 export {movieService}

@@ -1,11 +1,12 @@
 import {movieService} from "../../Services/movie.service";
-import {createAsyncThunk, createSlice, current} from "@reduxjs/toolkit";
+import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
 
 const initialState = {
     movies: [],
     loading: false,
     error: null,
     currentPage:1,
+    search: '',
 }
 
 
@@ -23,28 +24,12 @@ const getPage = createAsyncThunk('movieSlice/getPage',
     })
 
 
-
-// const getPoster = createAsyncThunk('movieSlice/getImage',
-//
-//     async (currentPoster, {rejectWithValue}) => {
-//
-//         try {
-//             const {data} = await movieService.getPoster(currentPoster)
-//             return data;
-//
-//         } catch (e) {
-//             e.rejectWithValue(e.response.data)
-//         }
-//     })
-
-//***************************************************
-
 const searchMovie = createAsyncThunk('movieSlice/searchMovie',
 
-    async (data, {rejectWithValue}) => {
+    async (query, {rejectWithValue}) => {
 
     try {
-        const {data} = await movieService.searchMovie(data)
+        const {data} = await movieService.searchMovie(query)
         return data;
 
     } catch (e) {
@@ -82,6 +67,9 @@ const movieSlice = createSlice({
                 state.movies = action.payload
                 state.loading = false
             })
+            .addCase('search', (state,action) =>{
+                state.search = action.text;
+            })
 
 
 });
@@ -90,7 +78,6 @@ const {reducer: movieReducer, actions: {}} = movieSlice;
 
 const movieActions = {
     getPage,
-  //  getPoster
     searchMovie
 }
 

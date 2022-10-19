@@ -1,0 +1,50 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 27%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: 84px;
+    border-top: 3px solid blueviolet;
+    border-radius: 10px;
+    box-shadow: 4px 20px 15px #7c7c7c;
+    margin-bottom:10px ;
+
+}
+h2{
+    text-align: center;
+}
+.card img {
+    width: 40%;
+    height: 100%;
+transition: ease-in-out 0.3s;
+}
+
+.card p {
+    color: #c2c200;
+}
+
+.card img:hover {
+
+
+
+}
+
+/*****************************/
+
+.foundCard{
+    overflow: hidden;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-top: 3px solid blueviolet;
+    border-radius: 10px;
+    width: 40%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: ease-in-out 1s;
+    box-shadow: 4px 20px 15px #7c7c7c;
+}
