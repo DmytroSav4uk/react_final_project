@@ -13,12 +13,12 @@ const MoviesList = () => {
 
     const {movies, error, loading} = useSelector(state => state.movieReducer);
     let [currentPage, setCurrentPage] = useState(1);
+    let [query, setQuery] = useState('');                                                                      
 
 
     const pageIncrease = () => {
         console.log("++")
         setCurrentPage(currentPage + 1);
-        //movieService.getPage(currentPage+1)
     }
 
     const pageIncrease5 = () => {
@@ -40,12 +40,11 @@ const MoviesList = () => {
 
 
     useEffect(() => {
-
         dispatch(movieActions.getPage(currentPage));
-    }, [dispatch, currentPage])
+    }, [dispatch,currentPage])
 
 
-    const foo = "<"
+    const foo = "<";
 
 
     return (

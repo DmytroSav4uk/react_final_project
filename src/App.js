@@ -2,7 +2,8 @@ import {MoviesList} from "./Components/MoviesList/MoviesList";
 import {Header} from "./Components/Header/Header";
 
 import {Route, Routes} from "react-router-dom";
-import {FoundMovies} from "./Components/FoundMoviePage/FoundMovies";
+import TestSearch from "./TestSearch/TestSearch";
+
 
 
 function App() {
@@ -11,15 +12,15 @@ function App() {
 
         <div>
 
-            <div>
-                <Header/>
-            </div>
+            {/*<div>*/}
+            {/*    <Header/>*/}
+            {/*</div>*/}
 
             <div>
-                <Routes>
-                    <Route path={'/'} element={<MoviesList/>}/>
-                    <Route path={'/search/movies'} element={<FoundMovies/>}/>}
-                </Routes>
+                <TestSearch/>
+                {/*<Routes>*/}
+                {/*    <Route path={'/'} element={<MoviesList/>}/>*/}
+                {/*</Routes>*/}
             </div>
 
 
