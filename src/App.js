@@ -5,6 +5,9 @@ import {Route, Routes} from "react-router-dom";
 import TestSearch from "./TestSearch/TestSearch";
 import {store} from "./redux/store";
 
+import {MovieDetails} from "./Components/MovieDetails/MovieDetails";
+import {SearchForm} from "./Components/Header/Search form/SearchForm";
+
 
 
 
@@ -41,7 +44,9 @@ function App() {
 
             <div>
                 <Routes>
+                    {/*<Route path={'/'} element={ <SearchForm/>}/>*/}
                     <Route path={'/'} element={<MoviesList/>}/>
+                    <Route path={'/movie/details/'} element={<MovieDetails/>}/>
                 </Routes>
             </div>
         </div>

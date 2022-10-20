@@ -10,25 +10,27 @@
     border-radius: 10px;
     box-shadow: 4px 20px 15px #7c7c7c;
     margin-bottom:10px ;
+    transition: ease-in-out 0.2s;
 
 }
+
+.card:hover{
+    scale: 105%;
+    cursor: pointer;
+}
+
+
 h2{
     text-align: center;
 }
 .card img {
     width: 40%;
     height: 100%;
-transition: ease-in-out 0.3s;
+
 }
 
 .card p {
     color: #c2c200;
-}
-
-.card img:hover {
-
-
-
 }
 
 /*****************************/
@@ -37,14 +39,21 @@ transition: ease-in-out 0.3s;
     overflow: hidden;
     margin-right: 10px;
     margin-left: 10px;
+    margin-bottom: 15px;
     border-top: 3px solid blueviolet;
     border-radius: 10px;
-    width: 40%;
+    width: 30%;
     height: 15%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    transition: ease-in-out 1s;
+    transition: ease-in-out 0.3s;
+    box-shadow: 1px 1px 1px #7c7c7c;
+}
+
+.foundCard:hover{
+    scale: 110%;
     box-shadow: 4px 20px 15px #7c7c7c;
+    background: white;
 }

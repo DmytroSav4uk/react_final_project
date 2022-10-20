@@ -1,10 +1,21 @@
 
 .header {
     display: flex;
-    justify-content: center;
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: center;
 }
 
+.icon{
+    width: 100px;
+    height: 100px;
+    transition: ease-in-out 0.2s;
+}
 
+.icon:hover{
+    scale: 110%;
+    cursor: pointer;
+}
 /*******************************/
 
 .input {
@@ -31,7 +42,7 @@ input {
 }
 
 
-button{
+.submitButton{
     background: none;
     border: none;
     margin-left: 2px;
@@ -40,7 +51,7 @@ button{
     height: 50px;
 }
 
-button:hover{
+.submitButton:hover{
     background: pink;
     border-radius: 100%;
     scale: 110%;

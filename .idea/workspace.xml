@@ -1,28 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cd9c24e2-55db-4fe0-8068-2f1430b6079c" name="Changes" comment="day 3">
-      <change afterPath="$PROJECT_DIR$/src/Components/Header/header.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/MoviesList/movieList.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/MoviesList/paginator.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/MoviesListCard/MovieListSearchCard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/MoviesListCard/card.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Pagination/Pagination.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Pagination/usePagination.js" afterDir="false" />
+    <list default="true" id="cd9c24e2-55db-4fe0-8068-2f1430b6079c" name="Changes" comment="day 4 completed successfully">
+      <change afterPath="$PROJECT_DIR$/src/Components/Icon/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/MovieDetails/MovieDetails.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/MovieDetails/details.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header/Header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Header/Search form/SearchForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header/Search form/SearchForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Header/header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header/header.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/MoviesList/MoviesList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MoviesList/MoviesList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/MoviesList/movieList.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MoviesList/movieList.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/MoviesListCard/MovieListSearchCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MoviesListCard/MovieListSearchCard.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/MoviesListCard/MoviesListCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MoviesListCard/MoviesListCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/MoviesListCard/card.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MoviesListCard/card.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Pagination/Pagination.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Pagination/usePagination.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Config/urls/urls.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Config/urls/urls.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Services/movie.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/movie.service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TestSearch/TestSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestSearch/TestSearch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/slices/Movie.slice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/slices/Movie.slice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +59,11 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Dima\IdeaProjects\react_final_project\src\Components\Icon" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -82,7 +84,11 @@
       <workItem from="1666180099210" duration="3684000" />
       <workItem from="1666186215190" duration="9875000" />
       <workItem from="1666197142242" duration="5772000" />
-      <workItem from="1666202978370" duration="3390000" />
+      <workItem from="1666202978370" duration="3616000" />
+      <workItem from="1666206777325" duration="11000" />
+      <workItem from="1666211918664" duration="159000" />
+      <workItem from="1666252933518" duration="10189000" />
+      <workItem from="1666264949166" duration="19486000" />
     </task>
     <task id="LOCAL-00001" summary="made services">
       <created>1665999309696</created>
@@ -126,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666167314784</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="day 4 completed successfully">
+      <created>1666206411643</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1666206411643</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +172,7 @@
     <MESSAGE value="day 1 completed" />
     <MESSAGE value="day 2" />
     <MESSAGE value="day 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="day 3" />
+    <MESSAGE value="day 4 completed successfully" />
+    <option name="LAST_COMMIT_MESSAGE" value="day 4 completed successfully" />
   </component>
 </project>
