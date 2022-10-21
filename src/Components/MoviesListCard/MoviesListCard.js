@@ -1,23 +1,33 @@
 import css from "./card.module.css"
 
 import StarRatings from "react-star-ratings/build/star-ratings";
-import {useDispatch} from "react-redux";
-import {movieActions} from "../../redux/slices/Movie.slice";
-import {Link} from "react-router-dom";
-
-
-
+import {useSelector} from "react-redux";
 
 
 const MoviesListCard = ({movie}) => {
-    const {id, title, backdrop_path,poster_path,vote_average} = movie;
+    const {id, title, poster_path, vote_average, genre_ids} = movie;
+    const {genres} = useSelector(state => state.genresReducer)
 
-const dispatch = useDispatch();
+    function getGenreName(ids) {
+        let gName = '';
+        for (const genre of genres.genres) {
+            if (ids.includes(genre.id)) {
+                if (gName.length > 0) {
+                    gName += ', '
+                }
+                gName = gName + genre.name
+            }
+        }
+        return gName
+
+    }
 
     return (
-        <div className={css.card}  onClick={()=>{window.location ='/movie/details?id='+id}  }>
+        <div className={css.card} onClick={() => {
+            window.location = '/movie/details?id=' + id
+        }}>
+            <img src={"https://image.tmdb.org/t/p/w500/" + poster_path} alt={title + "img"}></img>
             <h2>{title}</h2>
-            <img src={"https://image.tmdb.org/t/p/w500/" + poster_path} alt={title +"img"}></img>
             <p>average rate:{vote_average}</p>
             <StarRatings
                 rating={vote_average}
@@ -29,7 +39,7 @@ const dispatch = useDispatch();
                 svgIconViewBox={css.stars}
             />
 
-            <div></div>
+            <div className={css.badge}>{getGenreName(genre_ids)} </div>
 
         </div>
     )

@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cd9c24e2-55db-4fe0-8068-2f1430b6079c" name="Changes" comment="day 4 completed successfully">
-      <change afterPath="$PROJECT_DIR$/src/Components/Icon/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/MovieDetails/MovieDetails.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/MovieDetails/details.module.css" afterDir="false" />
+    <list default="true" id="cd9c24e2-55db-4fe0-8068-2f1430b6079c" name="Changes" comment="day 5 completed successfully">
+      <change afterPath="$PROJECT_DIR$/src/Components/Header/GenresList/Genre.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Header/GenresList/GenresList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Header/GenresList/genres.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/genre.service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/slices/Genres.slice.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Header/Search form/SearchForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header/Search form/SearchForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Header/header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header/header.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/MovieDetails/details.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MovieDetails/details.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/MoviesList/MoviesList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MoviesList/MoviesList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/MoviesList/movieList.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MoviesList/movieList.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/MoviesListCard/MovieListSearchCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MoviesListCard/MovieListSearchCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/MoviesList/paginator.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MoviesList/paginator.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/MoviesListCard/MoviesListCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MoviesListCard/MoviesListCard.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/MoviesListCard/card.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MoviesListCard/card.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Pagination/Pagination.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Pagination/usePagination.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Config/urls/urls.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Config/urls/urls.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/movie.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/movie.service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/slices/Movie.slice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/slices/Movie.slice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/axios.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/axios.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +88,19 @@
       <workItem from="1666206777325" duration="11000" />
       <workItem from="1666211918664" duration="159000" />
       <workItem from="1666252933518" duration="10189000" />
-      <workItem from="1666264949166" duration="19486000" />
+      <workItem from="1666264949166" duration="19807000" />
+      <workItem from="1666290068745" duration="76000" />
+      <workItem from="1666290154619" duration="261000" />
+      <workItem from="1666290424082" duration="80000" />
+      <workItem from="1666290936031" duration="2935000" />
+      <workItem from="1666296592815" duration="496000" />
+      <workItem from="1666299412370" duration="825000" />
+      <workItem from="1666338325053" duration="438000" />
+      <workItem from="1666344881584" duration="3212000" />
+      <workItem from="1666348609251" duration="8000" />
+      <workItem from="1666352107545" duration="1506000" />
+      <workItem from="1666355075474" duration="10651000" />
+      <workItem from="1666366642739" duration="13080000" />
     </task>
     <task id="LOCAL-00001" summary="made services">
       <created>1665999309696</created>
@@ -139,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666206411643</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="day 5 completed successfully">
+      <created>1666288926900</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1666288926900</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,6 +192,7 @@
     <MESSAGE value="day 2" />
     <MESSAGE value="day 3" />
     <MESSAGE value="day 4 completed successfully" />
-    <option name="LAST_COMMIT_MESSAGE" value="day 4 completed successfully" />
+    <MESSAGE value="day 5 completed successfully" />
+    <option name="LAST_COMMIT_MESSAGE" value="day 5 completed successfully" />
   </component>
 </project>

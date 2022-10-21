@@ -1,21 +1,20 @@
 import {MoviesList} from "./Components/MoviesList/MoviesList";
 import {Header} from "./Components/Header/Header";
+import {store} from "./redux/store";
+import {MovieDetails} from "./Components/MovieDetails/MovieDetails";
+import {genresActions} from "./redux/slices/Genres.slice";
 
 import {Route, Routes} from "react-router-dom";
-import TestSearch from "./TestSearch/TestSearch";
-import {store} from "./redux/store";
-
-import {MovieDetails} from "./Components/MovieDetails/MovieDetails";
-import {SearchForm} from "./Components/Header/Search form/SearchForm";
-
-
-
-
-
-
+import {useDispatch, useSelector} from "react-redux";
+import {useEffect} from "react";
 
 function App() {
+    const {genres} = useSelector(state => state.genresReducer)
+    const dispatch = useDispatch();
 
+    useEffect(()=>{
+        dispatch(genresActions.getAllGenres())
+     },[genres.genres])
 
     let prevSearch = '';
 
@@ -36,6 +35,11 @@ function App() {
         }
     });
 
+    if (genres.genres == null){
+        return ''
+    }
+    else
+
     return (
         <div>
             <div>
@@ -44,7 +48,6 @@ function App() {
 
             <div>
                 <Routes>
-                    {/*<Route path={'/'} element={ <SearchForm/>}/>*/}
                     <Route path={'/'} element={<MoviesList/>}/>
                     <Route path={'/movie/details/'} element={<MovieDetails/>}/>
                 </Routes>

@@ -7,36 +7,27 @@ import {MoviesListCard} from "../MoviesListCard/MoviesListCard";
 import {MovieListSearchCard} from "../MoviesListCard/MovieListSearchCard";
 import ReactPaginate from "react-paginate";
 import css from "./movieList.module.css"
-
+import {genresActions} from "../../redux/slices/Genres.slice";
 
 function MoviesList() {
 
     const dispatch = useDispatch();
     const {movies} = useSelector(state => state.movieReducer);
-
-
-
     let currentPage = 1;
-
 
     useEffect(() => {
         dispatch(movieActions.getPage(currentPage));
     }, [dispatch, currentPage])
 
-
     const handlePageChange = (page) => {
-        let selected = page;
         dispatch(movieActions.getPage(page.selected + 1))
     }
-
 
     if (movies != null && movies.results != null && movies.results.length > 0 && movies.results[0].title != null)
         return (
             <div>
-
-
                 <div className={css.movies}>
-                    {movies.results.map(movie => <MoviesListCard key={movie.id} movie={movie}/>)}
+                    {movies.results.map(movie => <MoviesListCard key={movie.id} movie={movie} />)}
                 </div>
                 <div className={css.paginatorWrap}>
                     <ReactPaginate
@@ -59,11 +50,7 @@ function MoviesList() {
             <div>
                 <div className={css.upText}>
                     <h1>List of found movies</h1>
-                    <button className={css.upTextBtn} onClick={() => dispatch(movieActions.getPage(currentPage))}>Back
-                        to list
-                    </button>
-                </div>
-
+                                  </div>
                 <div className={css.searchResults}>
                     {movies.results.map(movie => <MovieListSearchCard key={movie.id} searchMovie={movie}/>)}
                 </div>
@@ -73,9 +60,8 @@ function MoviesList() {
             </div>)
     else
         return (
-            <div>
-                <p>No Films found</p>
-                <button onClick={() => dispatch(movieActions.getPage(currentPage))}>Back to list</button>
+            <div className={css.noFilms}>
+                <h1>Sorry,No Films found</h1>
             </div>
         )
 }
