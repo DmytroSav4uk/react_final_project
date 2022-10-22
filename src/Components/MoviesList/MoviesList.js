@@ -7,7 +7,7 @@ import {MoviesListCard} from "../MoviesListCard/MoviesListCard";
 import {MovieListSearchCard} from "../MoviesListCard/MovieListSearchCard";
 import ReactPaginate from "react-paginate";
 import css from "./movieList.module.css"
-import {genresActions} from "../../redux/slices/Genres.slice";
+
 
 function MoviesList() {
 
@@ -22,6 +22,7 @@ function MoviesList() {
     const handlePageChange = (page) => {
         dispatch(movieActions.getPage(page.selected + 1))
     }
+
 
     if (movies != null && movies.results != null && movies.results.length > 0 && movies.results[0].title != null)
         return (
@@ -50,7 +51,7 @@ function MoviesList() {
             <div>
                 <div className={css.upText}>
                     <h1>List of found movies</h1>
-                                  </div>
+                </div>
                 <div className={css.searchResults}>
                     {movies.results.map(movie => <MovieListSearchCard key={movie.id} searchMovie={movie}/>)}
                 </div>

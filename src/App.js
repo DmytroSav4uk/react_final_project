@@ -7,6 +7,7 @@ import {genresActions} from "./redux/slices/Genres.slice";
 import {Route, Routes} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
 import {useEffect} from "react";
+import {MoviesFoundByGenre} from "./Components/MoviesList/MoviesFoundByGenre";
 
 function App() {
     const {genres} = useSelector(state => state.genresReducer)
@@ -44,6 +45,7 @@ function App() {
         <div>
             <div>
                 <Header/>
+                <MoviesFoundByGenre/>
             </div>
 
             <div>
@@ -51,6 +53,9 @@ function App() {
                     <Route path={'/'} element={<MoviesList/>}/>
                     <Route path={'/movie/details/'} element={<MovieDetails/>}/>
                 </Routes>
+
+
+
             </div>
         </div>
     );

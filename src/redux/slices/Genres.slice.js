@@ -45,8 +45,9 @@ const genresSlice = createSlice({
                 state.genres = action.payload;
             })
             .addCase(searchMovieByGenreId.fulfilled, (state, action)=>{
-                state.name = action.payload;
-                console.log(JSON.stringify(state.name))
+
+                state.genres = action.payload;
+                console.log(JSON.stringify(state.genres))
             })
 });
 

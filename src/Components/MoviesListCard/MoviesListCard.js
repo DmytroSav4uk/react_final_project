@@ -19,12 +19,12 @@ const MoviesListCard = ({movie}) => {
             }
         }
         return gName
-
     }
 
     return (
         <div className={css.card} onClick={() => {
-            window.location = '/movie/details?id=' + id
+            window.location = '/movie/details/'
+                + '?id=' + id
         }}>
             <img src={"https://image.tmdb.org/t/p/w500/" + poster_path} alt={title + "img"}></img>
             <h2>{title}</h2>
@@ -38,9 +38,7 @@ const MoviesListCard = ({movie}) => {
                 starSpacing="2px"
                 svgIconViewBox={css.stars}
             />
-
-            <div className={css.badge}>{getGenreName(genre_ids)} </div>
-
+              <span className={css.badge}>{getGenreName(genre_ids)} </span>
         </div>
     )
 }
