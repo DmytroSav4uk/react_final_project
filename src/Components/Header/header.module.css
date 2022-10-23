@@ -20,7 +20,7 @@
 
 .flex{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
 }
 
@@ -74,6 +74,24 @@ input {
 button img{
     width: 30px;
     height: 30px;
+}
+
+
+.circle{
+    background: brown;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}
+
+.pseudoUser p {
+    margin: 0;
+}
+
+.pseudoUser{
+    display: flex;
+    margin-top:20px ;
+padding-right: 10px;
 }
 
 

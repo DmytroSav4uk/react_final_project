@@ -24,9 +24,13 @@ const Header = () =>{
                     <>
                     <GenresList/>
                     <SearchForm/>
+                        <div className={css.pseudoUser}><div className={css.circle}></div><p>hello, user</p></div>
                     </>
                 }/>
             </Routes>
+
+
+
             </div>
         </div>
     )
