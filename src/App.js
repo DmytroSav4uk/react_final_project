@@ -45,7 +45,8 @@ function App() {
         <div>
             <div>
                 <Header/>
-                <MoviesFoundByGenre/>
+                {/*<MoviesFoundByGenre/>*/}
+
             </div>
 
             <div>

@@ -1,11 +1,10 @@
 import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
 
 import {genreService} from "../../Services/genre.service";
-import {movieService} from "../../Services/movie.service";
-
 
 const initialState = {
-    genres: []
+    genres: {},
+    deps: 1
 }
 
 const getAllGenres = createAsyncThunk('genreSlice/getAllGenres',
@@ -34,7 +33,6 @@ const searchMovieByGenreId = createAsyncThunk('genreSlice/searchMovieByGenreId',
     });
 
 
-
 const genresSlice = createSlice({
     name: 'genresSlice',
     initialState,
@@ -44,8 +42,7 @@ const genresSlice = createSlice({
             .addCase(getAllGenres.fulfilled, (state, action) => {
                 state.genres = action.payload;
             })
-            .addCase(searchMovieByGenreId.fulfilled, (state, action)=>{
-
+            .addCase(searchMovieByGenreId.fulfilled, (state, action) => {
                 state.genres = action.payload;
                 console.log(JSON.stringify(state.genres))
             })

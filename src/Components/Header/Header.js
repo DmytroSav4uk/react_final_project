@@ -20,7 +20,11 @@ const Header = () =>{
             </div>
             <div className={css.flex}>
             <Routes>
-                <Route path={'/'} element={<><GenresList/><SearchForm/></> }/>
+                <Route path={'/'} element={<>
+
+                    {/*<GenresList/>*/}
+
+                    <SearchForm/></> }/>
             </Routes>
             </div>
         </div>

@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cd9c24e2-55db-4fe0-8068-2f1430b6079c" name="Changes" comment="day 6 completed successfully| need to complete search by genres">
-      <change afterPath="$PROJECT_DIR$/src/Components/MoviesList/MoviesFoundByGenre.js" afterDir="false" />
+    <list default="true" id="cd9c24e2-55db-4fe0-8068-2f1430b6079c" name="Changes" comment="day 7 completed  successfully| need to complete search by genres">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Header/GenresList/Genre.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header/GenresList/Genre.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/MoviesList/MoviesList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MoviesList/MoviesList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/MoviesListCard/MoviesListCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MoviesListCard/MoviesListCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/MoviesListCard/card.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MoviesListCard/card.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Header/GenresList/GenresList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header/GenresList/GenresList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/MoviesList/MoviesFoundByGenre.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MoviesList/MoviesFoundByGenre.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/MoviesList/paginator.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Config/urls/urls.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Config/urls/urls.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/slices/Genres.slice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/slices/Genres.slice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/slices/Movie.slice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/slices/Movie.slice.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +94,8 @@
       <workItem from="1666355075474" duration="10651000" />
       <workItem from="1666366642739" duration="13140000" />
       <workItem from="1666429919226" duration="4091000" />
-      <workItem from="1666457525940" duration="8940000" />
+      <workItem from="1666457525940" duration="8988000" />
+      <workItem from="1666519395479" duration="11208000" />
     </task>
     <task id="LOCAL-00001" summary="made services">
       <created>1665999309696</created>
@@ -157,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666382357337</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="day 7 completed  successfully| need to complete search by genres">
+      <created>1666472202105</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1666472202105</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,6 +203,7 @@
     <MESSAGE value="day 4 completed successfully" />
     <MESSAGE value="day 5 completed successfully" />
     <MESSAGE value="day 6 completed successfully| need to complete search by genres" />
-    <option name="LAST_COMMIT_MESSAGE" value="day 6 completed successfully| need to complete search by genres" />
+    <MESSAGE value="day 7 completed  successfully| need to complete search by genres" />
+    <option name="LAST_COMMIT_MESSAGE" value="day 7 completed  successfully| need to complete search by genres" />
   </component>
 </project>
