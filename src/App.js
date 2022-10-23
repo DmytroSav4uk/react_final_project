@@ -15,7 +15,7 @@ function App() {
 
     useEffect(()=>{
         dispatch(genresActions.getAllGenres())
-     },[genres.genres])
+     },[])
 
     let prevSearch = '';
 
@@ -45,11 +45,19 @@ function App() {
         <div>
             <div>
                 <Header/>
-                {/*<MoviesFoundByGenre/>*/}
 
             </div>
 
             <div>
+
+                <div>
+                    <Routes>
+                        <Route path={'/'} element={ <MoviesFoundByGenre/>}/>
+
+                    </Routes>
+
+                </div>
+
                 <Routes>
                     <Route path={'/'} element={<MoviesList/>}/>
                     <Route path={'/movie/details/'} element={<MovieDetails/>}/>
@@ -63,3 +71,4 @@ function App() {
 }
 
 export default App;
+

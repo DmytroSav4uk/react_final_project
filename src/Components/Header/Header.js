@@ -23,7 +23,6 @@ const Header = () =>{
                 <Route path={'/'} element={<>
 
                     <GenresList/>
-
                     <SearchForm/></> }/>
             </Routes>
             </div>

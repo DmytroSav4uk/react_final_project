@@ -7,6 +7,7 @@ import {MoviesListCard} from "../MoviesListCard/MoviesListCard";
 import {MovieListSearchCard} from "../MoviesListCard/MovieListSearchCard";
 import ReactPaginate from "react-paginate";
 import css from "./movieList.module.css"
+import {genresActions} from "../../redux/slices/Genres.slice";
 
 
 function MoviesList() {
@@ -18,6 +19,7 @@ function MoviesList() {
     useEffect(() => {
         dispatch(movieActions.getPage(currentPage));
     }, [dispatch, currentPage])
+
 
     const handlePageChange = (page) => {
         dispatch(movieActions.getPage(page.selected + 1))

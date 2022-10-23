@@ -9,7 +9,7 @@
     box-shadow: 1px 1px 1px #7c7c7c;
     margin: 10px 40px 20px;
     transition: ease-in-out 0.2s;
-overflow: hidden;
+    overflow: hidden;
 
 }
 
@@ -64,10 +64,15 @@ overflow: hidden;
 .badge{
     text-align: center;
     position: relative;
-    top: -450px;
+    top: -500px;
     left: 100px;
-    background: rgb(255, 0, 0);
+    background: rgba(255, 0, 0, 0.48);
     color: white;
-    width: 1000px;
-    transform: rotate(0.15turn);
+    width: 100px;
+    /*transform: rotate(0.15turn);*/
+    font-size: 15px;
 }
+
+/***********************/
+
+

@@ -14,6 +14,13 @@
 
 }
 
+.foundMoviesByGenre{
+    display: block ruby;
+    width: 100%;
+    height: auto;
+    overflow-x: scroll;
+}
+
 
 .upText {
     text-align: center;
@@ -42,20 +49,20 @@
 
 /******************************************/
 .paginatorWrap {
-    position: fixed;
-    bottom: 50px;
-    right: 40px;
-    width: 100px;
+    display: flex;
+    width: 100%;
     text-align: center;
+    justify-content: center;
 }
 
 .pagination {
     margin: 15px auto;
     display: flex;
-    flex-direction: column;
+    /*flex-direction: column;*/
+
     list-style: none;
     outline: none;
-    gap: 10px;
+    gap: 20px;
 
 }
 
@@ -64,8 +71,8 @@
     background-color: #000000;
     border-color: #000000;
     color: #000000;
-    border-radius: 10px;
-    scale: 105%;
+
+
 }
 
 .pagination > li > a {
@@ -102,4 +109,5 @@
 }
 
 /******************************************/
+
 

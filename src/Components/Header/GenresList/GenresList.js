@@ -7,15 +7,13 @@ import css from "./genres.module.css"
 const GenresList = () => {
 
     const {genres} = useSelector(state => state.genresReducer);
-    // const {deps} = useSelector(state => state.)
 
     const dispatch = useDispatch()
-    const [deps, setDeps] = useState(1)
 
     useEffect(() => {
         dispatch(genresActions.getAllGenres());
-        console.log('a')
-    }, [deps])
+
+    }, [])
 
 
     return (
