@@ -30,9 +30,9 @@ const MoviesListCard = ({movie}) => {
             <h2>{title}</h2>
             <p>average rate:{vote_average}</p>
             <StarRatings
-                rating={vote_average}
+                rating={vote_average/2}
                 starRatedColor="yellow"
-                numberOfStars={10}
+                numberOfStars={5}
                 name='rating'
                 starDimension="20px"
                 starSpacing="2px"

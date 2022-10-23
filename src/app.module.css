@@ -1,0 +1,28 @@
+
+.father{
+    display: flex;
+    justify-content: center;
+}
+
+
+.center{
+    width: 70%;
+    background: linear-gradient(#000049, #ffffff);
+    border-radius: 50px;
+    overflow: hidden;
+
+}
+
+.genreMovies{
+    overflow-x:scroll ;
+}
+
+.backgroundImage{
+
+    position: fixed;
+    z-index: -999;
+}
+
+body::-webkit-scrollbar-button {
+    border-radius: 20px;
+}

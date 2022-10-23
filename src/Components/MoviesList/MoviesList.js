@@ -7,7 +7,6 @@ import {MoviesListCard} from "../MoviesListCard/MoviesListCard";
 import {MovieListSearchCard} from "../MoviesListCard/MovieListSearchCard";
 import ReactPaginate from "react-paginate";
 import css from "./movieList.module.css"
-import {genresActions} from "../../redux/slices/Genres.slice";
 
 
 function MoviesList() {
@@ -30,7 +29,7 @@ function MoviesList() {
         return (
             <div>
                 <div className={css.movies}>
-                    {movies.results.map(movie => <MoviesListCard key={movie.id} movie={movie} />)}
+                    {movies.results.map(movie => <MoviesListCard key={movie.id} movie={movie}/>)}
                 </div>
                 <div className={css.paginatorWrap}>
                     <ReactPaginate

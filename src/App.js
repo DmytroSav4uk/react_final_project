@@ -3,6 +3,8 @@ import {Header} from "./Components/Header/Header";
 import {store} from "./redux/store";
 import {MovieDetails} from "./Components/MovieDetails/MovieDetails";
 import {genresActions} from "./redux/slices/Genres.slice";
+import css from "./app.module.css"
+
 
 import {Route, Routes} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
@@ -13,61 +15,60 @@ function App() {
     const {genres} = useSelector(state => state.genresReducer)
     const dispatch = useDispatch();
 
-    useEffect(()=>{
+    useEffect(() => {
         dispatch(genresActions.getAllGenres())
-     },[])
+    }, [])
 
     let prevSearch = '';
 
     store.subscribe(() => {
         const state = store.getState();
         const newSearch = state.movieReducer.search.trim();
-        if( newSearch !== prevSearch)
-        {
-            if( newSearch === '')
-            {
+        if (newSearch !== prevSearch) {
+            if (newSearch === '') {
                 console.log('Do regular movie load')
-            }
-            else
-            {
+            } else {
                 console.log('Run search for: ' + newSearch);
             }
             prevSearch = newSearch;
         }
     });
 
-    if (genres.genres == null){
+    if (genres.genres == null) {
         return ''
-    }
-    else
+    } else
 
-    return (
-        <div>
-            <div>
-                <Header/>
 
-            </div>
 
-            <div>
 
-                <div>
-                    <Routes>
-                        <Route path={'/'} element={ <MoviesFoundByGenre/>}/>
 
-                    </Routes>
+        return (
+            <div className={css.father}>
+                <div className={css.backgroundImage}>
+                    <img src={'https://images8.alphacoders.com/944/thumb-1920-944311.jpg'}/>
 
                 </div>
+                <div className={css.center}>
+                    <div>
+                        <Header/>
+                    </div>
 
-                <Routes>
-                    <Route path={'/'} element={<MoviesList/>}/>
-                    <Route path={'/movie/details/'} element={<MovieDetails/>}/>
-                </Routes>
+                    <div>
 
+                        <div className={css.genreMovies}>
+                            <Routes>
+                                <Route path={'/'} element={<MoviesFoundByGenre/>}/>
+                            </Routes>
+                        </div>
 
-
+                        <Routes>
+                            <Route path={'/'} element={<MoviesList/>}/>
+                            <Route path={'/movie/details/'} element={<MovieDetails/>}/>
+                        </Routes>
+                    </div>
+                </div>
             </div>
-        </div>
-    );
+        );
 }
 
 export default App;

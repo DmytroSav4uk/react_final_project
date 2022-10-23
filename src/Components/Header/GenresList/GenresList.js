@@ -1,18 +1,17 @@
 import {useDispatch, useSelector} from "react-redux";
-import {genresActions} from "../../../redux/slices/Genres.slice";
-import {useEffect, useState} from "react";
+import {useEffect} from "react";
+
 import {Genre} from "./Genre";
 import css from "./genres.module.css"
+import {genresActions} from "../../../redux/slices/Genres.slice";
 
 const GenresList = () => {
 
     const {genres} = useSelector(state => state.genresReducer);
-
     const dispatch = useDispatch()
 
     useEffect(() => {
         dispatch(genresActions.getAllGenres());
-
     }, [])
 
 
