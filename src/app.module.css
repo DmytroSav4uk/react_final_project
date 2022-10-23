@@ -7,7 +7,7 @@
 
 .center{
     width: 70%;
-    background: linear-gradient(#000049, #ffffff);
+    background: linear-gradient(#000049, #ffc2f7);
     border-radius: 50px;
     overflow: hidden;
 
@@ -26,3 +26,4 @@
 body::-webkit-scrollbar-button {
     border-radius: 20px;
 }
+

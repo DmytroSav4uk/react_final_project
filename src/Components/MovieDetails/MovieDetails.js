@@ -39,10 +39,13 @@ const MovieDetails = () => {
                             />
                         </div>
                         <h1>{oneMovie.title}</h1>
+                        <p>"{oneMovie.tagline}"</p>
+                        <p>Release date:{oneMovie.release_date}({oneMovie.status})</p>
                     </div>
                     <div className={'mid'}>
                         <div className={css.text}>
                             <p>{oneMovie.overview}</p>
+                            <a className={css.a} href={oneMovie.homepage}>visit movie homepage</a>
                         </div>
                     </div>
                 </div>

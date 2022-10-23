@@ -10,6 +10,7 @@ import {Route, Routes} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
 import {useEffect} from "react";
 import {MoviesFoundByGenre} from "./Components/MoviesList/MoviesFoundByGenre";
+import Scrollbars from "react-custom-scrollbars-2";
 
 function App() {
     const {genres} = useSelector(state => state.genresReducer)
@@ -43,12 +44,17 @@ function App() {
 
 
         return (
+
+
+            <Scrollbars style={{ width: "100vw", height: "100vh", right: 30, scrollbarColor: "auto" }}>
             <div className={css.father}>
                 <div className={css.backgroundImage}>
                     <img src={'https://images8.alphacoders.com/944/thumb-1920-944311.jpg'}/>
 
                 </div>
+
                 <div className={css.center}>
+
                     <div>
                         <Header/>
                     </div>
@@ -65,9 +71,13 @@ function App() {
                             <Route path={'/'} element={<MoviesList/>}/>
                             <Route path={'/movie/details/'} element={<MovieDetails/>}/>
                         </Routes>
+
                     </div>
+
                 </div>
+
             </div>
+            </Scrollbars>
         );
 }
 

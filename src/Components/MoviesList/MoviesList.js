@@ -63,7 +63,7 @@ function MoviesList() {
     else
         return (
             <div className={css.noFilms}>
-                <h1>Sorry,No Films found</h1>
+                <h1>Sorry,No Films found :(</h1>
             </div>
         )
 }

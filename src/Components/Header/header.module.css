@@ -3,6 +3,8 @@
     margin-top: 10px;
     flex-direction: column;
     align-items: center;
+    background: #6968bb;
+    background: linear-gradient(  #000049, #ffc2f7);
 }
 
 .icon{
@@ -33,15 +35,21 @@ form{
 .input {
     position: relative;
     font-size: 1.5em;
-    background: linear-gradient(21deg, #abc2cc, #63f5dc);
+    background: linear-gradient(21deg, #1a9fda, #1c2293);
     padding: 3px;
     display: inline-block;
     border: none;
     text-align: center;
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
+    transition: ease-in-out 0.3s;
 }
 
+.input:focus{
+    outline: none;
+    border-radius:50px ;
+    margin-right:20px ;
+}
 
 input {
     font-family: Calibri;
@@ -50,27 +58,22 @@ input {
 }
 
 ::placeholder {
-    color: #000000;
+    color: #ffffff;
 }
-
 
 .submitButton{
     background: none;
     border: none;
     margin-left: 2px;
-    transition: ease-in-out 0.3s;
     width: 50px;
     height: 50px;
+    cursor: pointer;
 }
 
-.submitButton:hover{
-    background: pink;
-    border-radius: 100%;
-    scale: 110%;
-    margin-left: 10px;
-}
 
 button img{
     width: 30px;
     height: 30px;
 }
+
+
