@@ -14,6 +14,7 @@ const GenresList = () => {
 
     useEffect(() => {
         dispatch(genresActions.getAllGenres());
+        console.log('a')
     }, [deps])
 
 

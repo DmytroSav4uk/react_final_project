@@ -22,7 +22,7 @@ const Header = () =>{
             <Routes>
                 <Route path={'/'} element={<>
 
-                    {/*<GenresList/>*/}
+                    <GenresList/>
 
                     <SearchForm/></> }/>
             </Routes>
