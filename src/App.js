@@ -66,16 +66,12 @@ function App() {
                                 <Route path={'/'} element={<MoviesFoundByGenre/>}/>
                             </Routes>
                         </div>
-
                         <Routes>
                             <Route path={'/'} element={<MoviesList/>}/>
                             <Route path={'/movie/details/'} element={<MovieDetails/>}/>
                         </Routes>
-
                     </div>
-
                 </div>
-
             </div>
             </Scrollbars>
         );

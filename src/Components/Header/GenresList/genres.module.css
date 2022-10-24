@@ -43,7 +43,4 @@
 .dropdown:hover .dropdownContent {display: flex;flex-wrap:wrap ;width: 1000px;}
 
 .dropdown:hover .dropbtn {background-color: #3f1e73; text-align: left;
-
-
-
 }
