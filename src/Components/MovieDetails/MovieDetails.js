@@ -46,6 +46,7 @@ const MovieDetails = () => {
                         <div className={css.text}>
                             <p>{oneMovie.overview}</p>
                             <a className={css.a} href={oneMovie.homepage}>visit movie homepage</a>
+                            <a className={css.a} href={"https://hdrezka.ag/search/?do=search&subaction=search&q="+oneMovie.title}>find on HD Rezka</a>
                         </div>
                     </div>
                 </div>
