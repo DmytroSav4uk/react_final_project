@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cd9c24e2-55db-4fe0-8068-2f1430b6079c" name="Changes" comment="the nightmare is over :')">
+    <list default="true" id="cd9c24e2-55db-4fe0-8068-2f1430b6079c" name="Changes" comment="connected to hd rezka">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/MovieDetails/MovieDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MovieDetails/MovieDetails.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Config/urls/urls.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Config/urls/urls.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/slices/Movie.slice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/slices/Movie.slice.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +37,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Dima/IdeaProjects/react_final_project&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
@@ -93,7 +96,22 @@
       <workItem from="1666602680568" duration="257000" />
       <workItem from="1667042823882" duration="1130000" />
       <workItem from="1667150720815" duration="316000" />
-      <workItem from="1667391796673" duration="442000" />
+      <workItem from="1667391796673" duration="466000" />
+      <workItem from="1667399279564" duration="10000" />
+      <workItem from="1667406772633" duration="179000" />
+      <workItem from="1667413075111" duration="932000" />
+      <workItem from="1667489165083" duration="61000" />
+      <workItem from="1667582309350" duration="269000" />
+      <workItem from="1667589342200" duration="410000" />
+      <workItem from="1667658271250" duration="1832000" />
+      <workItem from="1667679212130" duration="259000" />
+      <workItem from="1668174297360" duration="187000" />
+      <workItem from="1668505254700" duration="485000" />
+      <workItem from="1668941571232" duration="120000" />
+      <workItem from="1669467762156" duration="76000" />
+      <workItem from="1669467933295" duration="1132000" />
+      <workItem from="1669630212436" duration="7000" />
+      <workItem from="1669673964896" duration="608000" />
     </task>
     <task id="LOCAL-00001" summary="made services">
       <created>1665999309696</created>
@@ -221,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666602831443</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="connected to hd rezka">
+      <created>1667392250999</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1667392250999</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,6 +287,7 @@
     <MESSAGE value="logic is done| need to finish styles and dark theme switcher" />
     <MESSAGE value="final steps" />
     <MESSAGE value="the nightmare is over :')" />
-    <option name="LAST_COMMIT_MESSAGE" value="the nightmare is over :')" />
+    <MESSAGE value="connected to hd rezka" />
+    <option name="LAST_COMMIT_MESSAGE" value="connected to hd rezka" />
   </component>
 </project>

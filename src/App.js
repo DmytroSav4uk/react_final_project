@@ -4,12 +4,11 @@ import {store} from "./redux/store";
 import {MovieDetails} from "./Components/MovieDetails/MovieDetails";
 import {genresActions} from "./redux/slices/Genres.slice";
 import css from "./app.module.css"
-
+import {MoviesFoundByGenre} from "./Components/MoviesList/MoviesFoundByGenre";
 
 import {Route, Routes} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
 import {useEffect} from "react";
-import {MoviesFoundByGenre} from "./Components/MoviesList/MoviesFoundByGenre";
 import Scrollbars from "react-custom-scrollbars-2";
 
 function App() {
@@ -40,39 +39,35 @@ function App() {
     } else
 
 
-
-
-
         return (
 
 
-            <Scrollbars style={{ width: "100vw", height: "100vh", right: 30, scrollbarColor: "auto" }}>
-            <div className={css.father}>
-                <div className={css.backgroundImage}>
-                    <img src={'https://images8.alphacoders.com/944/thumb-1920-944311.jpg'}/>
+            <Scrollbars style={{width: "100vw", height: "100vh", right: 30, scrollbarColor: "auto"}}>
+                <div className={css.father}>
+                    <div className={css.backgroundImage}>
+                        <img src={'https://images8.alphacoders.com/944/thumb-1920-944311.jpg'}/>
 
-                </div>
-
-                <div className={css.center}>
-
-                    <div>
-                        <Header/>
                     </div>
 
-                    <div>
+                    <div className={css.center}>
 
-                        <div className={css.genreMovies}>
+                        <div>
+                            <Header/>
+                        </div>
+
+                        <div>
+                            <div className={css.genreMovies}>
+                                <Routes>
+                                    <Route path={'/'} element={<MoviesFoundByGenre/>}/>
+                                </Routes>
+                            </div>
                             <Routes>
-                                <Route path={'/'} element={<MoviesFoundByGenre/>}/>
+                                <Route path={'/'} element={<MoviesList/>}/>
+                                <Route path={'/movie/details/'} element={<MovieDetails/>}/>
                             </Routes>
                         </div>
-                        <Routes>
-                            <Route path={'/'} element={<MoviesList/>}/>
-                            <Route path={'/movie/details/'} element={<MovieDetails/>}/>
-                        </Routes>
                     </div>
                 </div>
-            </div>
             </Scrollbars>
         );
 }

@@ -57,6 +57,7 @@ const movieSlice = createSlice({
 
             .addCase(getPage.fulfilled, (state, action) => {
                 state.movies = action.payload
+                console.log(state.movies)
                })
             .addCase(searchMovie.fulfilled, (state, action) => {
                 state.movies = action.payload
